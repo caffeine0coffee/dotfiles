@@ -1,0 +1,47 @@
+{
+  // Outline Settings
+  "outline.splitCommand": "bo 40vs",
+  "outline.previewMaxWidth": 40,
+  "outline.autoPreview": true,
+  "outline.showLineNumber": true,
+  "outline.detailAsDescription": false,
+  "outline.previewBorderRounded": true,
+  "outline.autoWidth": true,
+
+  //"coc.preferences.jumpCommand": "edit",
+
+  "suggest.autoTrigger": "trigger",
+  "languageserver": {
+    "ccls": {
+      "command": "ccls",
+      "filetypes": ["c", "cpp", "cuda", "objc", "objcpp"],
+      "rootPatterns": [".ccls-root", "compile_commands.json"],
+      "initializationOptions": {
+        "cache": {
+          "directory": ".ccls-cache"
+        },
+        "client": {
+          "snippetSupport": true
+        }
+      }
+    },
+    "cmake": {
+      "command": "cmake-language-server",
+      "filetypes": ["cmake"],
+      "rootPatterns": [
+        "build/"
+      ],
+      "initializationOptions": {
+        "buildDirectory": "build"
+      }
+    },
+    "efm": {
+      "command": "efm-langserver",
+      "args": [],
+      // custom config path
+      // "args": ["-c", "/path/to/your/config.yaml"],
+      //"filetypes": ["vim", "eruby", "markdown"]
+      "filetypes": ["vim"]
+    }
+  }
+}
